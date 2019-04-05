@@ -7,7 +7,7 @@ const whoIam = () => {
 }
 
 const whoIamUpper = () => {
-  return upper.upperCaseName(myName);
+  return upper.upperCaseName(whoIam());
 }
 
 module.exports = { whoIam, whoIamUpper };
