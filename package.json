@@ -1,18 +1,12 @@
 {
-  "name": "camigomez35-whoiam",
-  "version": "1.0.1",
-  "description": "This library return my name.",
-  "main": "src/index.js",
-  "files": [
-    "lib"
-  ],
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "node src/index.test.js"
+    "build": "babel --config-file ./.babelrc packages/camigomez35-whoiam/src -d packages/camigomez35-whoiam/lib",
+    "test": "node packages/camigomez35-whoiam/src/index.test.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3"
+    "@babel/preset-env": "^7.4.3",
+    "lerna": "^3.13.1"
   }
 }

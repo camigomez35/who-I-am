@@ -1,3 +1,6 @@
-# who-I-am
+# My library
 
-This library return my name.
+Super first library.
+
+- Babel
+- Lerna
