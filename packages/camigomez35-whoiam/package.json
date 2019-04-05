@@ -5,5 +5,8 @@
   "main": "src/index.js",
   "files": [
     "lib"
-  ]
+  ],
+  "dependencies": {
+    "camigomez35-uppercase": "^1.0.3"
+  }
 }

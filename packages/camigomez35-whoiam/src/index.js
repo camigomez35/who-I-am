@@ -1,5 +1,13 @@
+const upper = require('camigomez35-uppercase');
+
+const myName = "Maria Camila Gómez Rpo"
+
 const whoIam = () => {
-  return "Maria Camila Gómez";
+  return myName;
 }
 
-module.exports = { whoIam };
+const whoIamUpper = () => {
+  return upper.upperCaseName(myName);
+}
+
+module.exports = { whoIam, whoIamUpper };
