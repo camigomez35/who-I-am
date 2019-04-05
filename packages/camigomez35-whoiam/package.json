@@ -1,6 +1,6 @@
 {
   "name": "camigomez35-whoiam",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This library return my name.",
   "main": "src/index.js",
   "files": [
