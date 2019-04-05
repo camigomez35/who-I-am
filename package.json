@@ -1,7 +1,11 @@
 {
   "scripts": {
-    "build": "babel --config-file ./.babelrc packages/camigomez35-whoiam/src -d packages/camigomez35-whoiam/lib",
-    "test": "node packages/camigomez35-whoiam/src/index.test.js"
+    "build": "npm run build-upper && npm run build-whoiam",
+    "build-whoiam": "babel --config-file ./.babelrc packages/camigomez35-whoiam/src -d packages/camigomez35-whoiam/lib",
+    "build-upper": "babel --config-file ./.babelrc packages/camigomez35-upperCase/src -d packages/camigomez35-upperCase/lib",
+    "test": "npm run test-upper && npm run test-whoiam",
+    "test-whoiam": "node packages/camigomez35-whoiam/src/index.test.js",
+    "test-upper": "node packages/camigomez35-upperCase/src/index.test.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
